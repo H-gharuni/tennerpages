@@ -32,7 +32,7 @@ export default function ShowcasePage() {
       id: 4,
       title: 'Unique Tech Solution',
       description: 'Corporate technology solutions provider with comprehensive service offerings and modern web presence.',
-      url: 'https://utc.co.uk/',
+      url: 'https://uniquetechsolution.co.uk/',
       isPlaceholder: false,
       image: '/portfolio/UTC_co_uk.webp',
     },
