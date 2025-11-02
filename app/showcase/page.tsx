@@ -118,12 +118,14 @@ export default function ShowcasePage() {
                       </div>
                     </div>
                   ) : (
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover object-top hover:scale-110 transition-transform duration-300"
-                    />
+                    project.image && (
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover object-top hover:scale-110 transition-transform duration-300"
+                      />
+                    )
                   )}
                 </div>
 
