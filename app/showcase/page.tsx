@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { EyeIcon, SparklesIcon, GiftIcon, StarIcon } from '@heroicons/react/24/solid';
 
 export default function ShowcasePage() {
   const projects = [
@@ -78,17 +79,23 @@ export default function ShowcasePage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
               <div className="p-4">
-                <div className="text-3xl mb-2">👀</div>
+                <div className="flex justify-center mb-2">
+                  <EyeIcon className="h-10 w-10 text-blue-600" />
+                </div>
                 <p className="font-semibold text-gray-900">Browse & Explore</p>
                 <p className="text-gray-600 text-sm">Find designs you love</p>
               </div>
               <div className="p-4">
-                <div className="text-3xl mb-2">✨</div>
+                <div className="flex justify-center mb-2">
+                  <SparklesIcon className="h-10 w-10 text-purple-600" />
+                </div>
                 <p className="font-semibold text-gray-900">Get Inspired</p>
                 <p className="text-gray-600 text-sm">Tell us what you like</p>
               </div>
               <div className="p-4">
-                <div className="text-3xl mb-2">🎁</div>
+                <div className="flex justify-center mb-2">
+                  <GiftIcon className="h-10 w-10 text-green-600" />
+                </div>
                 <p className="font-semibold text-gray-900">We Reward</p>
                 <p className="text-gray-600 text-sm">Original owner gets a bonus</p>
               </div>
@@ -113,7 +120,9 @@ export default function ShowcasePage() {
                   {project.isPlaceholder ? (
                     <div className="h-full flex items-center justify-center bg-gradient-to-br from-blue-100 to-blue-200">
                       <div className="text-center p-6">
-                        <div className="text-6xl mb-4">🌟</div>
+                        <div className="flex justify-center mb-4">
+                          <StarIcon className="h-20 w-20 text-blue-600" />
+                        </div>
                         <p className="text-blue-900 font-semibold text-lg">Your Website Here</p>
                       </div>
                     </div>

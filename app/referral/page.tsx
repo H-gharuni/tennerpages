@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { BanknotesIcon, GiftIcon } from '@heroicons/react/24/solid';
 
 export default function ReferralPage() {
   return (
@@ -66,7 +67,9 @@ export default function ReferralPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* For Referrers */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="text-5xl mb-4 text-center">💰</div>
+              <div className="flex justify-center mb-4">
+                <BanknotesIcon className="h-16 w-16 text-green-600" />
+              </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">For Referrers</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -110,7 +113,9 @@ export default function ReferralPage() {
 
             {/* For New Clients */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="text-5xl mb-4 text-center">🎁</div>
+              <div className="flex justify-center mb-4">
+                <GiftIcon className="h-16 w-16 text-blue-600" />
+              </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">For New Clients</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { LightBulbIcon, CheckBadgeIcon, CurrencyPoundIcon } from '@heroicons/react/24/solid';
 
 export default function TrialOfferPage() {
   return (
@@ -92,7 +93,9 @@ export default function TrialOfferPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <div className="text-5xl mb-4">💡</div>
+              <div className="flex justify-center mb-4">
+                <LightBulbIcon className="h-16 w-16 text-yellow-500" />
+              </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Clarify Your Vision</h3>
               <p className="text-gray-600 text-lg">
                 Not sure exactly what you want? We&apos;ll help you organize your thoughts and create a clear plan for your website.
@@ -100,7 +103,9 @@ export default function TrialOfferPage() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <div className="text-5xl mb-4">🎯</div>
+              <div className="flex justify-center mb-4">
+                <CheckBadgeIcon className="h-16 w-16 text-green-600" />
+              </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Zero Risk Testing</h3>
               <p className="text-gray-600 text-lg">
                 See exactly what you&apos;re getting before making a full commitment. Only £10 to test drive our service and quality.
@@ -108,7 +113,9 @@ export default function TrialOfferPage() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-              <div className="text-5xl mb-4">💰</div>
+              <div className="flex justify-center mb-4">
+                <CurrencyPoundIcon className="h-16 w-16 text-blue-600" />
+              </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Money Back Value</h3>
               <p className="text-gray-600 text-lg">
                 If you proceed with the full service, your £10 is credited to your first month. It&apos;s essentially free!

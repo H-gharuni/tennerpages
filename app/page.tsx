@@ -11,6 +11,12 @@ import {
   CloudArrowUpIcon,
   Cog6ToothIcon,
   DevicePhoneMobileIcon,
+  BoltIcon,
+  LockClosedIcon,
+  CircleStackIcon,
+  WrenchScrewdriverIcon,
+  ArrowPathIcon,
+  ChartBarIcon,
 } from "@heroicons/react/24/solid";
 
 export default function Home() {
@@ -294,17 +300,19 @@ export default function Home() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
-              { icon: "⚡", title: "Fast Hosting", desc: "99.9% uptime guarantee" },
-              { icon: "🔒", title: "SSL Security", desc: "Free HTTPS certificate" },
-              { icon: "💾", title: "Daily Backups", desc: "Your data protected" },
-              { icon: "🛠️", title: "Expert Support", desc: "We're here to help" },
-              { icon: "📱", title: "Mobile Ready", desc: "Perfect on all devices" },
-              { icon: "🚀", title: "Fast Loading", desc: "Optimized for speed" },
-              { icon: "🔄", title: "Updates Included", desc: "Always up to date" },
-              { icon: "📊", title: "SEO Friendly", desc: "Built for search" },
+              { Icon: BoltIcon, title: "Fast Hosting", desc: "99.9% uptime guarantee", color: "text-blue-600" },
+              { Icon: LockClosedIcon, title: "SSL Security", desc: "Free HTTPS certificate", color: "text-green-600" },
+              { Icon: CircleStackIcon, title: "Daily Backups", desc: "Your data protected", color: "text-purple-600" },
+              { Icon: WrenchScrewdriverIcon, title: "Expert Support", desc: "We're here to help", color: "text-orange-600" },
+              { Icon: DevicePhoneMobileIcon, title: "Mobile Ready", desc: "Perfect on all devices", color: "text-indigo-600" },
+              { Icon: RocketLaunchIcon, title: "Fast Loading", desc: "Optimized for speed", color: "text-red-600" },
+              { Icon: ArrowPathIcon, title: "Updates Included", desc: "Always up to date", color: "text-teal-600" },
+              { Icon: ChartBarIcon, title: "SEO Friendly", desc: "Built for search", color: "text-cyan-600" },
             ].map((feature, idx) => (
               <div key={idx} className="rounded-lg bg-white p-6 hover:shadow-md transition-shadow text-center">
-                <div className="mb-3 text-4xl">{feature.icon}</div>
+                <div className="mb-3 flex justify-center">
+                  <feature.Icon className={`h-12 w-12 ${feature.color}`} />
+                </div>
                 <Typography variant="h6" color="blue-gray" className="mb-2">
                   {feature.title}
                 </Typography>
