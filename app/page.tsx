@@ -32,9 +32,9 @@ export default function Home() {
               <div className="mb-6 flex justify-center">
                 <div className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-white px-4 py-2 shadow-sm">
                   <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-                  <Typography variant="paragraph" className="font-medium text-gray-700 text-sm">
+                  <span className="font-medium text-gray-700 text-sm">
                     Trusted by 20+ UK Businesses
-                  </Typography>
+                  </span>
                 </div>
               </div>
 
