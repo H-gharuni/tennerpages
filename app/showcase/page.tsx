@@ -38,14 +38,6 @@ export default function ShowcasePage() {
     },
     {
       id: 5,
-      title: 'Jelly Anne Eyewear',
-      description: 'Stylish eyewear brand showcasing unique collections with a modern, visually appealing online presence.',
-      url: 'https://jellyanneyrewear.com/',
-      isPlaceholder: false,
-      image: '/portfolio/jellyanney.webp',
-    },
-    {
-      id: 6,
       title: 'Niloosoleimani',
       description: 'Professional portfolio website highlighting expertise and services with an elegant, sophisticated design.',
       url: 'https://niloosoleimani.com/',
