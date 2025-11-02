@@ -39,25 +39,18 @@ export default function Home() {
               </div>
 
               {/* Headline */}
-              <Typography
-                variant="h1"
-                color="blue-gray"
-                className="text-4xl !leading-tight md:text-5xl lg:text-6xl mb-6"
-              >
+              <h1 className="text-4xl leading-tight md:text-5xl lg:text-6xl mb-6 font-bold text-blue-gray-900">
                 Your Professional Website{" "}
                 <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(to right, #00257d, #060032)' }}>
                   in Just 2 Days
                 </span>
-              </Typography>
+              </h1>
 
               {/* Subheadline */}
-              <Typography
-                variant="lead"
-                className="!text-gray-600 text-lg md:text-xl mb-8"
-              >
+              <p className="text-gray-600 text-lg md:text-xl mb-8">
                 From <span className="font-semibold text-blue-600">£10 per page, per month</span>.
                 No huge upfront costs, no technical headaches.
-              </Typography>
+              </p>
 
               {/* CTAs */}
               <div className="flex flex-col gap-4 sm:flex-row justify-center mb-8">
