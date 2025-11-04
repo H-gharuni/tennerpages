@@ -35,7 +35,7 @@ export async function POST(request: Request) {
 
     // Send email to Tenner Pages
     const adminEmailData = await resend.emails.send({
-      from: 'Tenner Pages Contact Form <onboarding@resend.dev>',
+      from: 'Tenner Pages Contact Form <noreply@tennerpages.com>',
       to: 'info@tennerpages.com',
       replyTo: email, // Allow direct reply to the client
       subject: `New Contact Form Submission from ${name}`,
@@ -57,7 +57,7 @@ export async function POST(request: Request) {
 
     // Send thank you email to client
     const clientEmailData = await resend.emails.send({
-      from: 'Tenner Pages <onboarding@resend.dev>',
+      from: 'Tenner Pages <noreply@tennerpages.com>',
       to: email,
       replyTo: 'info@tennerpages.com',
       subject: 'Thank You for Contacting Tenner Pages',
