@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     const adminEmailData = await resend.emails.send({
       from: 'Tenner Pages Contact Form <onboarding@resend.dev>',
       to: 'info@tennerpages.com',
-      reply_to: email, // Allow direct reply to the client
+      replyTo: email, // Allow direct reply to the client
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -59,7 +59,7 @@ export async function POST(request: Request) {
     const clientEmailData = await resend.emails.send({
       from: 'Tenner Pages <onboarding@resend.dev>',
       to: email,
-      reply_to: 'info@tennerpages.com',
+      replyTo: 'info@tennerpages.com',
       subject: 'Thank You for Contacting Tenner Pages',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
