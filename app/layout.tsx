@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   description: "Your professional website in 2 days, for just £10 per page, per month. Fast, affordable website design for UK startups and small businesses.",
   icons: {
     icon: [
+      { url: '/favicon.ico', sizes: 'any' },
       { url: '/logo.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico' },
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
     ],
-    shortcut: '/logo.svg',
+    shortcut: '/favicon.ico',
     apple: '/favicon-96x96.png',
   },
 };
