@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -18,19 +20,54 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-blue-900 transition-colors">
+            <Link
+              href="/"
+              className={`transition-colors ${
+                pathname === '/'
+                  ? 'text-blue-900 font-semibold border-b-2 border-blue-900'
+                  : 'text-gray-700 hover:text-blue-900'
+              }`}
+            >
               Home
             </Link>
-            <Link href="/offer" className="text-gray-700 hover:text-blue-900 transition-colors">
+            <Link
+              href="/offer"
+              className={`transition-colors ${
+                pathname === '/offer'
+                  ? 'text-blue-900 font-semibold border-b-2 border-blue-900'
+                  : 'text-gray-700 hover:text-blue-900'
+              }`}
+            >
               The Offer
             </Link>
-            <Link href="/process" className="text-gray-700 hover:text-blue-900 transition-colors">
+            <Link
+              href="/process"
+              className={`transition-colors ${
+                pathname === '/process'
+                  ? 'text-blue-900 font-semibold border-b-2 border-blue-900'
+                  : 'text-gray-700 hover:text-blue-900'
+              }`}
+            >
               Our Process
             </Link>
-            <Link href="/showcase" className="text-gray-700 hover:text-blue-900 transition-colors">
+            <Link
+              href="/showcase"
+              className={`transition-colors ${
+                pathname === '/showcase'
+                  ? 'text-blue-900 font-semibold border-b-2 border-blue-900'
+                  : 'text-gray-700 hover:text-blue-900'
+              }`}
+            >
               Showcase
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-blue-900 transition-colors">
+            <Link
+              href="/contact"
+              className={`transition-colors ${
+                pathname === '/contact'
+                  ? 'text-blue-900 font-semibold border-b-2 border-blue-900'
+                  : 'text-gray-700 hover:text-blue-900'
+              }`}
+            >
               Contact
             </Link>
             <Link
@@ -70,42 +107,62 @@ export default function Navbar() {
             <div className="flex flex-col space-y-3">
               <Link
                 href="/"
-                className="text-gray-700 hover:text-blue-900 transition-colors py-2"
+                className={`transition-colors py-2 ${
+                  pathname === '/'
+                    ? 'text-blue-900 font-semibold border-l-4 border-blue-900 pl-3'
+                    : 'text-gray-700 hover:text-blue-900 pl-3'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/offer"
-                className="text-gray-700 hover:text-blue-900 transition-colors py-2"
+                className={`transition-colors py-2 ${
+                  pathname === '/offer'
+                    ? 'text-blue-900 font-semibold border-l-4 border-blue-900 pl-3'
+                    : 'text-gray-700 hover:text-blue-900 pl-3'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 The Offer
               </Link>
               <Link
                 href="/process"
-                className="text-gray-700 hover:text-blue-900 transition-colors py-2"
+                className={`transition-colors py-2 ${
+                  pathname === '/process'
+                    ? 'text-blue-900 font-semibold border-l-4 border-blue-900 pl-3'
+                    : 'text-gray-700 hover:text-blue-900 pl-3'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Our Process
               </Link>
               <Link
                 href="/showcase"
-                className="text-gray-700 hover:text-blue-900 transition-colors py-2"
+                className={`transition-colors py-2 ${
+                  pathname === '/showcase'
+                    ? 'text-blue-900 font-semibold border-l-4 border-blue-900 pl-3'
+                    : 'text-gray-700 hover:text-blue-900 pl-3'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Showcase
               </Link>
               <Link
                 href="/contact"
-                className="text-gray-700 hover:text-blue-900 transition-colors py-2"
+                className={`transition-colors py-2 ${
+                  pathname === '/contact'
+                    ? 'text-blue-900 font-semibold border-l-4 border-blue-900 pl-3'
+                    : 'text-gray-700 hover:text-blue-900 pl-3'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>
               <Link
                 href="/trial-offer"
-                className="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-semibold text-center"
+                className="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors font-semibold text-center ml-3"
                 onClick={() => setIsMenuOpen(false)}
               >
                 £10 Trial
