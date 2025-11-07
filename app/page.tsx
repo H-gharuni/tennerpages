@@ -60,8 +60,8 @@ export default function Home() {
 
               {/* CTAs */}
               <div className="flex flex-col gap-4 sm:flex-row justify-center mb-8">
-                <Link href="/contact">
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors flex items-center gap-3">
+                <Link href="/contact" className="w-full sm:w-auto flex justify-center">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors flex items-center gap-3 justify-center w-full sm:w-auto">
                     Get Started
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -79,8 +79,8 @@ export default function Home() {
                     </svg>
                   </button>
                 </Link>
-                <Link href="/trial-offer">
-                  <button className="bg-white hover:bg-gray-50 text-blue-600 font-bold py-4 px-8 rounded-lg text-lg transition-colors border-2 border-blue-600">
+                <Link href="/trial-offer" className="w-full sm:w-auto flex justify-center">
+                  <button className="bg-white hover:bg-gray-50 text-blue-600 font-bold py-4 px-8 rounded-lg text-lg transition-colors border-2 border-blue-600 w-full sm:w-auto">
                     Try £10 Trial
                   </button>
                 </Link>
@@ -367,8 +367,8 @@ export default function Home() {
             Join successful businesses who trusted us. Get your site live in 48 hours.
           </Typography>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Link href="/contact">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors flex items-center gap-3">
+            <Link href="/contact" className="w-full sm:w-auto flex justify-center">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors flex items-center gap-3 justify-center w-full sm:w-auto">
                 Start Your Project
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -386,8 +386,8 @@ export default function Home() {
                 </svg>
               </button>
             </Link>
-            <Link href="/trial-offer">
-              <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+            <Link href="/trial-offer" className="w-full sm:w-auto flex justify-center">
+              <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors w-full sm:w-auto">
                 Try £10 Trial First
               </button>
             </Link>
