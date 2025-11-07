@@ -61,7 +61,7 @@ export default function Home() {
               {/* CTAs */}
               <div className="flex flex-col gap-4 sm:flex-row justify-center mb-8">
                 <Link href="/contact">
-                  <Button size="lg" color="blue" className="flex items-center gap-3">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors flex items-center gap-3">
                     Get Started
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -77,12 +77,12 @@ export default function Home() {
                         d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                       />
                     </svg>
-                  </Button>
+                  </button>
                 </Link>
                 <Link href="/trial-offer">
-                  <Button size="lg" variant="outlined" color="blue">
+                  <button className="bg-white hover:bg-gray-50 text-blue-600 font-bold py-4 px-8 rounded-lg text-lg transition-colors border-2 border-blue-600">
                     Try £10 Trial
-                  </Button>
+                  </button>
                 </Link>
               </div>
 
